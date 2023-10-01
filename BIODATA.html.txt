@@ -1,0 +1,40 @@
+<body><font color="green"></font><center><font color="green"><b><u>BIODATA</u></b></font></center>
+<center><table bordercolor="red" border="5"></table><table border="7">
+<tbody><tr><th colspan="2">NAME</th>
+<td colspan="3">UDAVALAPATI SURESH</td>
+</tr>
+<tr><th colspan="2">MOTHER NAME</th>
+<td colspan="3">UDAVALAPATI MADHAVI</td>
+</tr>
+<tr><th colspan="2">DATE OF BIRTH</th>
+<td colspan="3">04/03/2003</td>
+</tr>
+<tr><th colspan="2">E-MAIL-ID</th>
+<td colspan="3">luckysuresh494@gmail.com</td>
+</tr>
+<tr><th colspan="2">GENDER</th>
+<td colspan="3">Male</td>
+</tr>
+<tr><th rowspan="6" colspan="2">ADDRESS</th></tr>
+<tr><th>D.NO</th>
+<td colspan="2">1-0-0</td></tr>
+<tr><th>VILLAGE</th><td colspan="2=2">Vadla Mopur</td></tr>
+<tr><th>POST</th><td colspan="2=2">Vadla Mopur</td></tr>
+<tr><th>MANDEL</th><td colspan="2=2">Dakkili</td></tr>
+<tr><th>DIST</th><td colspan="2=2">Tirupathi</td></tr>
+<tr><th colspan="5"><center>EDUCATIONAL QUALIFICATION</center></th></tr>
+<tr><th>QUALIFICATION</th><th>UNIVERSITY</th>
+<th>PLACE</th><th>PERCENTAGE</th><th>YEAR</th>
+</tr><tr>
+</tr><tr><td>B.Sc</td><td>S.V University</td><td>Tirupati</td>
+<td>70%</td><td>2023</td></tr>
+<tr><td>Intermediate</td><td>Goutham Vocational Junior College</td>
+<td>Venkatagiri</td><td>72%</td><td>2020</td></tr>
+<tr><td>SSC</td><td>Z.P.P High School</td><td>Vadla Mopur</td><td>52%</td><td>2018</td></tr><tr>
+<th colspan="2">LANGUAGES KNOWN</th>
+<td colspan="3">Telegu,English</td></tr>
+<tr><th colspan="2">IT SKILLS</th>
+<td colspan="3">M.S Office,C,C++,JAVA,HTML,Java Script</td>
+</tr>
+</tbody></table>
+</center></body>
