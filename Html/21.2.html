@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .k{
+            background-color: blue;
+            color: white;
+            padding: 60px;
+            width: 500px;
+            text-align: center;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="myId" class="myclass">
+        <h1>Front end</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam cupiditate neque minus, atque hic reprehenderit explicabo aliquam aspernatur eaque.</p>
+    </div>
+
+    <div id="myid">
+        <h1>Back End</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga pariatur doloribus libero adipisci facere non cumque aut dicta a sint nesciunt dolorum maxime impedit, dolorem est obcaecati reiciendis praesentium. Saepe.</p>
+    </div>
+    <script>
+
+        let x = document.getElementById("myId")
+        x.style.backgroundColor="green"
+        x.style.padding="60px"
+        x.style.width="500px"
+        x.style.textAlign="center"
+        x.style.color="white"
+        x.style.float="right"
+
+        let y = document.getElementById("myid")
+        y.classList.add("k")
+        y.classList.remove("k")
+
+
+        // y.style.backgroundColor="red"
+        // y.style.padding="60px"
+        // y.style.width="500px"
+        // y.style.textAlign="center"
+        // y.style.color="white"
+
+
+
+
+// ------------------------ Id selector -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        // let x = document.getElementById("myId")
+        //     console.log(x)
+
+// ------------------------ class selector ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        // let x = document.getElementsByClassName("myclass")
+        // console.log(x)
+
+// ------------------------ tag selector ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //  let x = document.getElementsByTagName("h1")
+    //  console.log(x)   
+
+// ------------------------ query selector ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        // let x = document.querySelector("#myId")
+        // console.log(x)
+
+        // let x = document.querySelector(".myclass")
+        // console.log(x)
+
+// ------------------------ query selector All ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+    // let x = document.querySelectorAll("#myId") 
+    // console.log(x)
+
+
+
+//innerHTML --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let x = document.getElementById("myId").innerHTML
+// console.log(x)
+
+//innerText-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// let x = document.getElementById("myId").innerText
+// console.log(x)
+
+
+
+
+// DOM -- Document object model 
+   // 4 stages
+   // Dom html -- it is user to access html elements 
+                // selector
+                // Id selector
+                // document.getElementById("id name")
+                // // class selector
+                // document.getElementsByClassName("class name")
+                // // tag selector
+                // document.getElementsByTagName("tag name")
+                // // query selector
+                // document.querySelector("# id name")
+                // document.querySelector(". class name")
+                // // query selector All
+                // document.querySelectorAll("# id  name")
+                // document.querySelectorAll(". class  name")
+   // Dom css
+   // Events
+   // Crud operations 
+
+
+
+
+    </script>
+    
+</body>
+</html>

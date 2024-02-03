@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Alert</button>
+    <button id="btn1">Add</button>
+    <button id="Dlt">Delete</button>
+    <h1 id="head"></h1>
+
+    <h1 >Count:<span id="count">0</span></h1>
+    <button onclick="ct()" id="inc" >INC</button>
+    <button>DEC</button>
+    <button>RESET</button>
+    
+    <div id="parent">
+      <h1 id="child">Html</h1>
+    </div>
+    <script>
+        let p =document.getElementById("parent")
+        p.addEventListener("click",function name(){
+          alert("parent Element")
+        },true)
+
+        let ch = document.getElementById("child")
+        ch.addEventListener("click",()=>{
+          alert("child Element")
+        },true)
+
+        // function ct(){
+        //     let k = document.getElementById("count").innerHTML
+        //     let value = parseInt(k) +1
+        //     document.getElementById("count").innerHTML = value
+        // }
+
+        let k = document.getElementById("inc")
+        k.addEventListener("click",function(){
+           let m =  document.getElementById("count").innerHTML
+           let value = parseInt(m) +1
+           document.getElementById("count").innerHTML = value
+
+        })
+
+
+
+   let x = document.getElementById("btn")
+    x.addEventListener("click",function name(){
+        alert("This a addEvent")
+   })  
+
+   let z = document.getElementById("btn1")
+   z.addEventListener("click",App1)
+
+   function App1(){
+    let y = document.getElementById("head").innerHTML="Hello suresh"
+   }
+
+   let b = document.getElementById("Dlt")
+   b.addEventListener("click",App2)
+   function App2(){
+    let a = document.getElementById("head").innerHTML=""
+   }
+
+// Event propogation
+  // 2 type of
+    // Event bubling -- child element excute first and parent will be excuting false
+    // Event Capturing -- parent excute first and chile will be excuting true
+
+// EventListeners
+  // 2 type of 
+    //1.addEventlistener -- attachEventlistener
+    //syntax
+          //    function App(){
+          //     alert("This a addEvent")
+         //    }
+
+        // function App1(){
+        //     let x = document.getElementById("head").innerHTML="Hello suresh"
+        // }
+    //syntax
+    // addEventListener("event",function(){
+
+    // }) 
+
+    //onclick == click
+    //ondblclick == dblclick
+
+    // 2. removeEventlistener -- datachEventlistener
+       // removeEvebtListener("click",inc)
+
+       
+
+    </script>
+</body>
+</html>

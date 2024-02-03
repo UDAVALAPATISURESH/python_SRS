@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>setTimeout & setInterval</title>
+    </head>
+    <body>
+        <script>
+            //Callback function -- one function passed into another as an argumets
+
+            // function App1(){
+            //     console.log("Function 1")
+            // }
+            // function App2(){
+            //     console.log("Function 2")
+            // }
+            // function App3(a,b,c,d,e){
+
+            //     console.log("Function 3")
+            //     a() // This a callback  function
+            //     b()
+            //     c()
+            //     d()
+            //     e()
+            // }
+            // function App4(){
+            //     console.log("Function 4")
+            // }
+            // function App5(){
+            //     console.log("Function 5")
+            // }
+            // function App6(){
+            //     console.log("Function 6")
+            // }
+            
+            // App3(App1,App2,App4,App5,App6)
+
+            // sync function -- The code excuting excuting step by step
+                         // In javascript everything sync function
+                        //   Ex:
+                                //   console.log("Hello Html")
+                                //   console.log("Hello Css")
+                                //   console.log("Hello Js")
+                                //   console.log("Hello React")
+        // Async funtion -- it will not wait for any statmenet automatically it go for the next statmenet
+                        // Ex :
+                                    // console.log("Html")  
+                                    // setTimeout(()=>{
+                                    //     console.log("CSS")
+                                    // },4000)
+                                    // console.log("javascript")               
+        // promises -- Are headling aync function only
+                     // The promises it takes two arguments
+                     //1.Reslove -- success . then()
+                     //2.Reject --  Failure . catch() -- it is used handle the errors
+                          
+                        // syntax 
+                        // let x=new promise(any one function(reslove,reject){
+
+                        // })
+
+
+                    // Ex :
+
+                    // let x=new Promise((resolve,reject)=>{
+                    //     let a=100
+                    //     let b=200
+                    //     if(a=="100" && b==200){
+                    //          resolve("Succes")
+                    //     }
+                    //     else{
+                    //         reject("failure")
+                    //     }
+                    // })
+                    // console.log(x)
+
+
+        // API -- Application programming interface
+        // Fetch(API url) -- transfer the data from one server to another server
+        // JSON -- (javascript object notation ) -- It is used to inter chenge the data
+
+    // function Aata(){
+    //         fetch("https://jsonplaceholder.typicode.com/posts")
+
+    //         .then((res)=>{
+    //             return res.json()
+    //         })
+
+    //         .then((response)=>{
+    //             console.log(response)
+    //         })
+
+    //         .catch((err)=>{
+    //             console.log(err)
+    //         })
+
+    // }
+
+    // Aata()
+
+        </script>
+    </body>
+</html>

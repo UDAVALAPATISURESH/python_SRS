@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 2px solid black;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<center>
+    <form onsubmit="formsubmit()">
+        <label>FullName</label>
+        <input type="text" id="fullname" name="fullname">
+        <br><br>
+        <label>EmailId</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label>Salary</label>
+        <input type="number" id="salary" name="salary">
+        <br><br>
+        <label>City</label>
+        <input type="text" id="city" name="city">
+        <br><br>
+        <input type="submit">
+    </form>
+    <table>
+        <thead >
+            <tr>
+                <th>FullName</th>
+                <th>EmailId</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th>Actions</th>
+            </tr>
+           
+        </thead>
+        <tbody>
+
+        </tbody id="tableBody">
+    </table>
+</center>
+<body>
+    <script>
+        // Crud operations
+        // create , read , update ,edit,delete
+        function formsubmit(event){
+            event.preventDefault()
+          let data = read()
+            getData(Data)
+        }
+        function read(){
+            let formData={}
+            formData["fullname"]=document.getElementById("fullname").value
+            formData["email"]=document.getElementById("email").value
+            formData["salary"]=document.getElementById("salary").value
+            formData["city"]=document.getElementById("city").value
+            return formData
+        }
+        function getData(data){
+            let table = document.getElementById("tableBody")[0]
+            let row = table.insertrow(table.length)
+
+            cell1.row.insertcell(0)
+            cell1.innerHTM = data.fullname
+
+            cell2.row.insertcell(1)
+            cell2.innerHTM = data.email
+
+            cell3.row.insertcell(2)
+            cell3.innerHTM = data.salary
+
+            cell4.row.insertcell(3)
+            cell4.innerHTM = data.city
+
+            cell5.row.innerHTM(4)
+            celll.row.innerHTM=`
+            <button onclick="editdata >Edit</button>
+            <button onclick="deletedata >Delete</button>`
+        }
+    </script>
+</body>
+</html>

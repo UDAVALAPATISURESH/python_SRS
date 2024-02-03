@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form onsubmit="formsubmit()">
+    <label >FullName</label>
+    <input type="text" id="name" >
+    <br><br> 
+    <label >Email</label>
+    <input type="email" id="email">
+    <br><br> 
+    <label >Mobile No</label>
+    <input type="text" id="mobile">
+    <br><br> 
+    <label >Password</label>
+    <input type="password" id="pass" >
+    <br><br> 
+    <label >CPassword</label>
+    <input type="password" id="cpass">
+    <br><br>
+    <input type="submit" >
+    <!-- <input type="reset"> -->
+
+  </form >
+    <script>
+      function formsubmit(){
+   
+        let changeName = document.getElementById("name").value
+        let changeEmail = document.getElementById("email").value
+        let changeMobile = document.getElementById("mobile").value
+        let changePswd = document.getElementById("pass").value
+        let changeCPswd = document.getElementById("cpass").value
+ 
+
+       if(changeName.length <6 ){
+         alert("pls enter 6 chars only")
+       }
+       else if(changePswd != changeCPswd){
+         alert("Password is dose not matched ")
+       }
+       else{
+          alert("Form is successfull")
+           localStorage.setItem("FullName",changeName)
+           localStorage.setItem("Email",changeEmail)
+           localStorage.setItem("Mobile No" ,changeMobile)
+           localStorage.setItem("Password",changePswd)
+           localStorage.setItem("CPassword",changeCPswd)
+       }
+
+      
+
+      }
+    // // Storages
+    // // 1.local Storage
+    //   // 2 items
+    //   //setItem -- it is used to store the data
+    //   //getItem -- it is used to get the data
+      
+      // localStorage.setItem("Name","Suresh")
+      // localStorage.setItem("Email","luckysuresh494@gmail.com")     // local storage data not delete  program closs but not delete (this local storage delete using key world ----- localStorage.clear() ---------------------------------)
+      // localStorage.setItem("Mobile no",7997854712)
+      // localStorage.setItem("Gender","Male")
+
+    //   // localStorage.clear() // This method using local data delete cheydaniki
+
+    //   // localStorage.setItem("Name","Muni")
+    //   // localStorage.setItem("Email","muni123@gmail.com")     // not allod duplite key 
+    //   // localStorage.setItem("Mobile no",9010406195)
+    //   // localStorage.setItem("Gender","Male")
+
+    //   let x = localStorage.getItem("Name")
+    //   let y = localStorage.getItem("Email")
+    //   console.log(x)
+    //   console.log(y)
+    //   document.write(x,"<br>",y)
+
+    // // 2.session Storage
+    //    // 2 items
+    //    //setItem -- it is used to store the data
+    //    //getItem -- it is used to get the data
+        
+    //    sessionStorage.setItem("Name","Muni")
+    //    sessionStorage.setItem("Email","muni123@gmail.com")     // session Storage data atometic delete on programm closs session date also delete
+    //    sessionStorage.setItem("Mobile no",9010406195)
+    //    sessionStorage.setItem("Gender","Male")
+
+    //   let a = sessionStorage.getItem("Name")
+    //   let b = sessionStorage.getItem("Email")
+    //   console.log(a)
+    //   console.log(b)
+    //   document.write("<br>",a,"<br>",b)
+
+
+
+    </script>
+</body>
+</html>

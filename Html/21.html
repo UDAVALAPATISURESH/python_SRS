@@ -1,0 +1,149 @@
+<!-- <html>
+    <head>
+        <title>
+            21.html
+        </title>
+    </head>
+    <body>
+        <script>
+            // callback() -- one function passed into another function as an arguments 
+            function App1(){
+                console.log("1st function")
+            }
+            function App2(){
+                console.log("2nd function")
+            }
+            function App3(a,b,c,d,e,f){
+
+                console.log("3rd function")
+                a={}
+                b={}
+                c={}
+                d={}
+                e ={}
+                f={}
+
+            }
+            function App4(){
+                console.log("4th function")
+            }
+            function App5(){
+                console.log("5th function")
+            }
+            function App6(){+
+                
+                console.log("6th function")
+            }
+            function App7(){
+                console.log("7th function")
+            }
+
+            App3(App1,App2,App4,App5,App6,App7)
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- NEW classssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+
+<!-- <html>
+    <head>
+        <title>setTimeout & setInterval</title>
+    </head>
+    <body>
+        <script>
+            // setTimeout -- To make some time limit to excute the functions 
+            // syntax
+                        // setTimeout(any on function (){
+
+                        // },time limit)
+                            // 1000 = 1s
+                            // 10000 = 10s
+                            // 3000 = 3s
+            //Ex : 
+                            setTimeout(function myName(){
+                                console.log("Hello suresh")
+                            },10000)
+
+                            setTimeout(()=>{
+                                console.log("good morning suresh")
+                            },10001)
+                            setTimeout(function(){
+                                console.log("How are you")
+                            },10002)
+
+                            setTimeout(()=>{
+                                document.write("Hello Hari ! my name is suresh")
+                            },3000)
+            // setInterval -- To make some time limit to excute the functions repeatedly 
+                            
+                            // setInterval(function myLover(){
+                            //     console.log("python")
+                            // },1000)
+
+                            setInterval(()=>{
+                                console.log("CSS")
+                            },2000)
+
+                            // setInterval(function (){
+                            //     console.log("HTML")
+                            // },1500)
+
+
+        // sync function -- The code excuting excuting step by step
+                         // In javascript everything sync function
+                        //   Ex:
+                                  console.log("Hello Html")
+                                  console.log("Hello Css")
+                                  console.log("Hello Js")
+                                  console.log("Hello React")
+        // Async funtion -- it will not wait for any statmenet automatically it go for the next statmenet
+                        // Ex :
+                                    console.log("Html")  
+                                    setTimeout(()=>{
+                                        console.log("CSS")
+                                    },4000)
+                                    console.log("javascript")               
+        // promises -- Are headling aync function only
+                     // The promises it takes two arguments
+                     //1.Reslove -- success . then()
+                     //2.Reject --  Failure . catch() -- it is used handle the errors
+                          
+                        // syntax 
+                        // let x=new promise(any one function(reslove,reject){
+
+                        // })
+
+
+                    // Ex :
+                            let x =new Promise((resolve,reject)=>{
+                                    let a=100
+                                    let b=200 
+                                
+                                    if (a=="100" || b==200){
+                                        resolve("Success")
+                                    }
+
+                                    else{
+                                        reject("Failur")
+                                    }
+                                
+                            
+                            })
+
+                            .then((res) => {
+                                console.log(res)
+                            })
+                            .catch((err)=>{
+                                console.log(err)
+                            })
+
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- NEW classssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+

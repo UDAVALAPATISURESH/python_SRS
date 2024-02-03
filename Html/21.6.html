@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            
+            
+        }
+        th,td{
+            border: 2px solid black;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <form onsubmit="formsubmit()">
+            <label>Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+            <br><br>
+            <label>Email Id:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            <label>Salary:</label>
+            <input type="number" id="salary" name="salary">
+            <br><br>
+            <label>City:</label>
+            <input type="text" id="city" name="city">
+            <br><br>
+            <input type="submit">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>EmailId</th>
+                    <th>Salary</th>
+                    <th>City</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </center>
+
+    <script>
+// EventListeners
+//    1.addEventlistener
+//    2.removeEventlistener
+
+//Crud operations
+//create
+//read
+//edit
+//update
+//delete
+
+function formsubmit(){
+    event.preventDefault()
+   let data = read()
+    getData(data)
+}
+
+function read(){
+    let formData = {}
+}
+
+function read(){
+    let formData ={}
+    formData["fullname"]= document.getElementById("fullname").value
+    formData["email"]= document.getElementById("email").value
+    formData["salary"]=document.getElementById("salary").value
+    formData["city"]=document.getElementById("city").value
+    return formData
+}
+function getData(data){
+    let table = document.getElementsByTagName("tbody")[0]
+    let row = table.insertRow(table.lenght)
+    cell1 = eow.insertcell(0)
+    cell1.innerHTML = data.fullname
+
+    cell2 = eow.insertcell(1)
+    cell2.innerHTML = data.email
+
+    cell3 = eow.insertcell(2)
+    cell3.innerHTML = data.salary
+
+    cell4 = eow.insertcell(3)
+    cell4.innerHTML = data.city
+
+    cell5 = eow.insertcell(4)
+    cell5.innerHTML = `
+    <button>Edit</button>
+    <button>Delete</button>
+    `
+    
+}
+
+// let obj={
+//     name:"Suresh",
+//     city:"Bengalore"
+// }
+// obj["age"]=20
+// console.log(obj)
+    </script>
+</body>
+</html>
