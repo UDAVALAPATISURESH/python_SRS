@@ -1,0 +1,93 @@
+.fp{
+    background-image: url("Asserts-20231122T120459Z-001/Asserts/Slider Section/krakenimages-376KN_ISplE-unsplash 2_516_4746.png");
+    background-size:cover;
+    width: 100%;
+    background-color: black;
+    
+}
+#q1{
+    width: 180px;
+    height: 80px;
+    /* padding-left: 80px; */
+    padding-top: 30px;
+}
+
+.sc{
+    padding-left: 200px;
+}
+#q2{
+    width: 600px;
+    height: 25px;
+    border-radius: 30px;
+}
+
+.bt{
+    padding-left: 700px;
+    
+    
+}
+#q3{
+    height: 20px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+}
+
+.na{
+    text-align: center;
+}
+.na li{
+    display: inline-block;
+    
+    color: white;
+}
+
+#tex{
+    text-align: center;
+}
+
+#b1{
+    border-radius: 30px;
+}
+#b2{
+    border-radius: 30px;
+    margin-bottom: 100px;
+   
+}
+
+
+#q4{
+    width: 25px;
+    color: white;
+    padding-left: 850px;
+   
+}
+
+#A1{
+    color: white;
+    padding-left: 90%;
+}
+
+#E{
+    color: white;
+}
+
+.sp{
+    background-image: url("Asserts-20231122T120459Z-001/Asserts/Why Should you trust/Rectangle 2_522_3234.png");
+    background-size:cover;
+    width: 100%;
+   padding-top: 10px;
+   
+}
+
+#hd{
+    text-align: center;
+    
+}
+
+.ls{
+    display: grid;
+    grid-template-columns:  20% 20% 20% 20% 20%;
+  
+}
+
